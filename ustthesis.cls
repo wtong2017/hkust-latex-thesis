@@ -1,3 +1,8 @@
+% UST THESIS DOCUMENT CLASS -- version 2.2 - not released
+%	Upgraded from version 2.1 by Alan Zhuang on November 1, 2015
+%	according to the guidelines on thesis preparation released
+%	in September 2009 by the PG secretary of the University. 
+
 % UST THESIS DOCUMENT CLASS -- version 2.0 - not released
 %	Upgraded from version 1.0 by Kam-Fai Chan on August 1, 2001
 %	according to the guidelines on thesis preparation released
@@ -82,12 +87,13 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 %\ProvidesClass{ustthesis}[1999/08/31 v1.0 LaTeX document class]
 %\ProvidesClass{ustthesis}[2001/08/01 v2.0 LaTeX document class]
-\ProvidesClass{ustthesis}[2002/07/23 v2.1 LaTeX document class]
+%\ProvidesClass{ustthesis}[2002/07/23 v2.1 LaTeX document class]
 	% 2002/01/01 -
 	%   Adding a definition to handle the title of acting
 	%   department head.
 	% 2002/07/23 -
-	%   Fix a logical bug to allow explicit use of \chapters.
+	%   Fix a logical bug to allow explicit use of \chapters
+\ProvidesClass{ustthesis}[2015/11/01 v2.2 LaTeX document class]
 \typeout{This class file is adapted from `ustthesis.sty' v1.3 (for LaTeX 2.09).}
 %\typeout{Please report any problems to cssystem@cs.ust.hk}
 \typeout{Please report any problems to kchan@cs.ust.hk}
@@ -1423,7 +1429,7 @@ scholarly research.}
 
 \long\def\@makecaption#1#2{
    \vskip 10pt
-   \setbox\@tempboxa\hbox{#1: #2}
+   \setbox\@tempboxa\hbox{#1. #2}
    \ifdim \wd\@tempboxa >\hsize   % IF longer than one line:
        \unhbox\@tempboxa\par      %   THEN set as ordinary paragraph.
      \else                        %   ELSE  center.
