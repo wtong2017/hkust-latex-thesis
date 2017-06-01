@@ -6,7 +6,7 @@
 
 \documentclass{ustthesis}
 
-\usepackage{times,amsmath,epsfig}
+\usepackage{mathpazo,amsmath,amssymb,epsfig,enumerate,bbm,calc,color,ifthen,capt-of} % original was times, but I think it's ugly; we use the same as IEEE CompSoc
 \usepackage{algorithm}
 \usepackage[noend]{algorithmic}
 \usepackage[center]{subfigure}
@@ -14,7 +14,19 @@
 \newtheorem{proof}{Proof}
 \usepackage{hyperref} % for better viewing experience  -- added by alan
 \usepackage[margin=25mm,textheight=247mm,textwidth=145mm]{geometry}
- 
+
+% Alan: begin the font trial
+% Euler for math | Palatino for rm | Helvetica for ss | Courier for tt
+\renewcommand{\rmdefault}{ppl} % rm
+%\linespread{1.05}        % Palatino needs more leading
+\usepackage[scaled]{helvet} % ss
+\usepackage{courier} % tt
+%\usepackage{euler} % math
+\usepackage{eulervm} % a better implementation of the euler package (not in gwTeX)
+\normalfont
+\usepackage[T1]{fontenc}
+% Alan: end the font trial
+
 \newcommand{\red}[1]{#1}
 \newcommand{\tab}[1]{\hspace{3mm}}
 

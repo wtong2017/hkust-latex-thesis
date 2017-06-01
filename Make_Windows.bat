@@ -36,6 +36,8 @@ xelatex main.tex
 bibtex main
 xelatex main.tex
 xelatex main.tex
+del thesis.pdf
+ren main.pdf thesis.pdf
 rem dvipdfmx main.dvi thesis.pdf
 	
 del  *.toc  /s

@@ -733,7 +733,7 @@ scholarly research.}
 %      \vglue 4ex
 %      {\normalsize Hong Kong, \space\mon\space\number\year\par}
 %      \vglue 10ex
-      {\normalsize Department of \@department\par}
+      {\normalsize {\@department} Program Office\par}
       \vglue 2ex
       {\normalsize The Hong Kong University of Science and Technology \par}
       \vglue 10ex
@@ -1592,7 +1592,7 @@ scholarly research.}
   \textspace
 %  \raisebox{-8pt}[0pt][17pt]{\rule{2.8in}{.5pt}}\par	% Print line.
   \raisebox{-8pt}[0pt][17pt]{\rule{\maxmem}{.5pt}}\par	% Print line.
-  \raisebox{0pt}[0pt][0pt]{\expandafter{#1}}\par	% Print member name below.
+  \raisebox{0pt}[0pt][0pt]{\expandafter{#1}}\par	% Print member name below. % alan: deleted \advisor before \expandafter 
   \textspaceundo
   \vglue 6ex
 }
@@ -1604,10 +1604,10 @@ scholarly research.}
 %	Make changes according to the guidelines released on March 2001.
 %\newcommand{\@membera}{\@member{\@advisor, Supervisor}}
 %\setcounter{@members}{1}	% Advisor is always 1st member
-%\settowidth{\maxmem}{\expandafter{\@advisor, Supervisor}}
+%\settowidth{\maxmem}{\expandafter{\@advisor, Supervisor}} % alan: deleted \advisor before \expandafter
 \newcommand{\@membera}{\@member{\@advisor, Thesis Supervisor}}
 \setcounter{@members}{1}	% Advisor is always 1st member
-\settowidth{\maxmem}{\expandafter{\@advisor, Thesis Supervisor}}
+\settowidth{\maxmem}{\expandafter{\@advisor, Thesis Supervisor}} % alan: deleted \advisor before \expandafter
 
 % @minmembers -- holds mimumum number of member macros needed.  It is set in
 % \maketitle.
@@ -1873,7 +1873,7 @@ scholarly research.}
 %    \vglue -6ex
     \vglue -3ex
     } \par
-    {\normalsize Department of \@department\par}
+    {\normalsize {\@department} Program Office\par}
 %    \vglue 3ex plus 1fill
     {\normalsize \today\par}
 %   {\normalsize Date:\hfill\rule[-.4ex]{2.35in}{.5pt}}
@@ -1925,7 +1925,7 @@ scholarly research.}
 %      \vglue 8ex
 %      {\normalsize Hong Kong \mon\space\number\year\par}
 %      \vglue 10ex
-      {\normalsize Department of \@department\par}
+      {\normalsize {\@department} Program Office\par}
       {\normalsize The Hong Kong University of Science and Technology \par}
       \vglue 4ex
       {\Lbi ABSTRACT \par\par\normalsize}
@@ -2095,7 +2095,7 @@ scholarly research.}
     \ifactingdefined
       \member{#1, Acting Head of Department}
     \else
-      \member{#1, Head of Department}
+      \member{#1, Associate Director}
     \fi
     \dheaddefinedtrue
   \fi
