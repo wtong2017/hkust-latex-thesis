@@ -3,7 +3,7 @@ hkust-latex-thesis
 
 A Better HKUST LaTeX Thesis Template 
 
-Ajusted to the latest version of HKUST Guidelines on Thesis Preparation: 
+Adjusted to the latest version of HKUST Guidelines on Thesis Preparation: 
 - http://ebookshelf.ust.hk/flippingbook/G15193/#66
 - http://www-chem.ust.hk/Forms/thesis%20preparation.pdf
 
