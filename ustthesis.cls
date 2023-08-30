@@ -672,6 +672,7 @@ scholarly research.}
 	\par\vspace{4cm}
         \begin{center}
           \candidate{\@author}
+	  {\normalsize \today\par} % new requirement
         \end{center}
 	\textspaceundo
 %	\typeout{Authorisation Page}
