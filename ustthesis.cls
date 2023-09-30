@@ -101,7 +101,7 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 \ProcessOptions
 \LoadClass{report}[1995/12/20 v1.3q Standard LaTeX document class]
-
+\RequirePackage{mfirstuc}
 %  draft option
 %
 % \overfullrule = 0pt                % Default is don't mark overfull hboxes.
@@ -672,7 +672,7 @@ scholarly research.}
 	\par\vspace{4cm}
         \begin{center}
           \candidate{\@author}
-	  {\normalsize \today\par} % new requirement
+          {\normalsize \today\par}
         \end{center}
 	\textspaceundo
 %	\typeout{Authorisation Page}
@@ -714,7 +714,7 @@ scholarly research.}
 %	Add certain vertical space before the title.
     \TOffset
     \begin{center}
-      {\Lbi \uppercase\expandafter{\@title} \par}
+      {\Lbi \capitalisewords\expandafter{\@title} \par}
       \vglue 4ex
 % Chan:
 %	Make changes according to the guidelines released on March 2001.
@@ -722,7 +722,7 @@ scholarly research.}
 %      \vglue 4ex
       {\lbi by \par}
       \vglue 2ex
-      {\lbi \uppercase\expandafter{\@author} \par}
+      {\lbi \expandafter{\@author} \par}
       \vglue 4ex
 %% Chan:
 %%	Make changes according to the guidelines released on March 2001.
@@ -768,7 +768,7 @@ scholarly research.}
 	\textspace
 	\begin{center}
 		\def\thanks##1{} % temporarily kill any thanks lines
-		{\large \uppercase\expandafter{\@title} \par}
+		{\large \capitalisewords\expandafter{\@title} \par}
 		{\large\lineskip .75em\begin{tabular}[t]{c}{\@author}\end{tabular}\par}
 		{\large Under the supervision of Professor \@advisor \par}
 		\vskip 1.5em
@@ -1743,7 +1743,7 @@ scholarly research.}
 %	Add certain vertical space before the title.
     \TOffset
     \begin{center}
-      {\Lbi \uppercase\expandafter{\@title} \par}
+      {\Lbi \capitalisewords\expandafter{\@title} \par}
 % Chan:
 %	Make changes according to the guidelines released on March 2001.
 %      \vglue 8ex
@@ -1752,7 +1752,7 @@ scholarly research.}
       \vglue 12ex
       {\lbi by \par}
       \vglue 2ex
-      {\lbi \uppercase\expandafter{\@author} \par\par}
+      {\lbi \expandafter{\@author} \par\par}
 % Chan:
 %	Make changes according to the guidelines released on March 2001.
 %      \vglue 8ex
@@ -1816,7 +1816,7 @@ scholarly research.}
 %	Add certain vertical space before the title.
     \TOffset
     \begin{center}
-      {\Lbi \uppercase\expandafter{\@title} \par}
+      {\Lbi \capitalisewords\expandafter{\@title} \par}
 % Chan:
 %	Make changes according to the guidelines released on March 2001.
 %      \vglue 8ex
@@ -1825,7 +1825,7 @@ scholarly research.}
       \vglue 6ex
       {\lbi by \par}
       \vglue 2ex
-      {\lbi \uppercase\expandafter{\@author} \par}
+      {\lbi \expandafter{\@author} \par}
 % Chan:
 %	Extend the centering environment for the whole page.
 %    \end{center}
@@ -1908,7 +1908,7 @@ scholarly research.}
 %	Add certain vertical space before the title.
     \TOffset
     \begin{center}
-      {\Lbi \uppercase\expandafter{\@title} \par}
+      {\Lbi \capitalisewords\expandafter{\@title} \par}
       \vglue 4ex
 % Chan:
 %	Make changes according to the guidelines released on March 2001.
@@ -1916,7 +1916,7 @@ scholarly research.}
 %      \vglue 4ex
       {\lbi by \par}
       \vglue 2ex
-      {\lbi \uppercase\expandafter{\@author} \par}
+      {\lbi \expandafter{\@author} \par}
 %      \vglue 6ex
       \vglue 4ex
 % Chan:
